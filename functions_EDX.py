@@ -532,4 +532,44 @@ def vca_purity_mask(spectrum_2D,nEM=10,special=False):
     sam_to_best_endmember = (sam_to_best_endmember - sam_to_best_endmember.min())/(sam_to_best_endmember.max()-sam_to_best_endmember.min())
     if special:
         sam_to_best_endmember = np.abs((sam_to_best_endmember - 0.5))*2
-    return sam_to_best_endmember    
+    return sam_to_best_endmember 
+
+
+#### for frame count analysis
+
+def compute_inner_outer_similarity_with_distances(dist_to_ref, labels):
+    # Initialize lists to store inner-class similarities and outer-class dissimilarities
+    inner_class_similarities = []
+    outer_class_dissimilarities = []
+    
+    # Get unique labels
+    unique_labels = np.unique(labels)
+    
+    # Compute inner-class similarity and outer-class dissimilarity for each cluster
+    for label in unique_labels:
+        # Get indices of data points belonging to the current cluster
+        cluster_indices = np.where(labels == label)[0]
+        
+        # Get distances from the reference for data points in the current cluster
+        cluster_distances = dist_to_ref[cluster_indices]
+        
+        # Compute average distance within the cluster
+        intra_cluster_distances = np.mean(np.abs(np.subtract.outer(cluster_distances, cluster_distances)))
+        inner_class_similarities.append(intra_cluster_distances)
+        
+        # Get distances from the reference for data points in other clusters
+        other_cluster_indices = np.where(labels != label)[0]
+        other_cluster_distances = dist_to_ref[other_cluster_indices]
+        
+        # Compute average distance to points in other clusters
+        inter_cluster_distances = np.mean(np.abs(np.subtract.outer(cluster_distances, other_cluster_distances)))
+        outer_class_dissimilarities.append(inter_cluster_distances)
+    
+    # Compute the ratio of inner-class similarity to outer-class dissimilarity
+    similarity_dissimilarity_ratio = np.mean(inner_class_similarities) / np.mean(outer_class_dissimilarities)
+    
+    return similarity_dissimilarity_ratio
+
+# Euclidean distance
+def euc(array1, array2):
+    return np.sqrt(np.sum((array1 - array2)**2))
