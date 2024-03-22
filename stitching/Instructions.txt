@@ -1,0 +1,9 @@
+- Open FIJI
+- File > Import > TrakEM2 XML > trakem2_xml.xml
+- Copy the tiles (Tile_XX.tiff) to Tiles/
+- Right click canvas > Project > Flush image cache
+- Right click canvas > Project > Regenerate all mipmas
+- Right click canvas > Export > Make flat image..
+- Select proper type + best quality > OK
+- FIJI > Plugins > Bio-Formats > Bio-Formats Exporter > xxx.ome.tiff > OK > OK
+- Done
