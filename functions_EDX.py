@@ -573,3 +573,60 @@ def compute_inner_outer_similarity_with_distances(dist_to_ref, labels):
 # Euclidean distance
 def euc(array1, array2):
     return np.sqrt(np.sum((array1 - array2)**2))
+
+
+
+################# for SAM ###############################
+def show_anns(anns,display=False,area_thresh=1024**2):
+    if len(anns) == 0:
+        return
+    sorted_anns = sorted(anns, key=(lambda x: x['area']), reverse=True)
+    #ax = plt.gca()
+    #ax.set_autoscale_on(False)
+
+    img = np.ones((sorted_anns[0]['segmentation'].shape[0], sorted_anns[0]['segmentation'].shape[1], 4))
+    img[:,:,3] = 0
+    for ann in sorted_anns:
+        if ann['area'] < area_thresh:
+            m = ann['segmentation']
+            color_mask = np.concatenate([np.random.random(3), [0.35]])
+            #color_mask = np.asarray([1,0,0,0.35])
+            img[m] = color_mask
+    
+    if display:
+        ax.imshow(img)
+    else:
+        return img
+    
+    
+def show_anns_EDX(anns,abundance_tile,colors,display=False,alpha=0.35,area_thresh=1024**2,min_purity=0,ignore_background=False):
+    if len(anns) == 0:
+        return
+    sorted_anns = sorted(anns, key=(lambda x: x['area']), reverse=True)
+    #ax = plt.gca()
+    #ax.set_autoscale_on(False)
+    img = np.ones((sorted_anns[0]['segmentation'].shape[0], sorted_anns[0]['segmentation'].shape[1], 4))
+    img[:,:,3] = 0
+    img_clr_idx = np.ones((sorted_anns[0]['segmentation'].shape[0], sorted_anns[0]['segmentation'].shape[1]))*-1
+    for ann in sorted_anns:
+        if ann['area'] < area_thresh:
+            m = ann['segmentation']
+            tmp_img = np.zeros((sorted_anns[0]['segmentation'].shape[0], sorted_anns[0]['segmentation'].shape[1]))
+            tmp_img[m] = 1
+            tmp_abundance_masked = tmp_img*abundance_tile
+            temp_sum = np.sum(np.sum(tmp_abundance_masked,axis=1),axis=1)
+
+            if ignore_background:
+                sorted_sums = np.argsort(-1*temp_sum)
+                color_idx = sorted_sums[np.nonzero(sorted_sums)[0]][0]
+            else:
+                color_idx = np.argmax(temp_sum)
+            if (np.max(temp_sum)/ann['area']/255)>=min_purity:
+                img_clr_idx[m] = color_idx
+                color_mask = np.concatenate([colors[color_idx], [alpha]])
+                img[m] = color_mask
+    
+    if display:
+        ax.imshow(img)
+    else:
+        return img,img_clr_idx
