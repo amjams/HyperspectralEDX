@@ -615,13 +615,13 @@ def show_anns_EDX(anns,abundance_tile,colors,display=False,alpha=0.35,area_thres
             tmp_img[m] = 1
             tmp_abundance_masked = tmp_img*abundance_tile
             temp_sum = np.sum(np.sum(tmp_abundance_masked,axis=1),axis=1)
-
+            #print(np.max(temp_sum)/ann['area'])
             if ignore_background:
                 sorted_sums = np.argsort(-1*temp_sum)
                 color_idx = sorted_sums[np.nonzero(sorted_sums)[0]][0]
             else:
                 color_idx = np.argmax(temp_sum)
-            if (np.max(temp_sum)/ann['area']/255)>=min_purity:
+            if (np.max(temp_sum)/ann['area'])>=min_purity:
                 img_clr_idx[m] = color_idx
                 color_mask = np.concatenate([colors[color_idx], [alpha]]) if color_idx>0 else np.concatenate([colors[color_idx], [0]])
                 img[m] = color_mask
