@@ -623,7 +623,7 @@ def show_anns_EDX(anns,abundance_tile,colors,display=False,alpha=0.35,area_thres
                 color_idx = np.argmax(temp_sum)
             if (np.max(temp_sum)/ann['area'])>=min_purity:
                 img_clr_idx[m] = color_idx
-                color_mask = np.concatenate([colors[color_idx], [alpha]]) if color_idx>0 else np.concatenate([colors[color_idx], [0]])
+                color_mask = np.concatenate([colors[color_idx], [alpha]]) if color_idx  else np.concatenate([colors[color_idx], [0]])
                 img[m] = color_mask
     
     if display:
