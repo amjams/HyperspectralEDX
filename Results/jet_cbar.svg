@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2024-05-11T22:17:42.487773</dc:date>
+    <dc:date>2024-05-23T16:52:55.746801</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -29,14 +29,14 @@ z
 " style="fill: #ffffff"/>
   </g>
   <g id="axes_1">
-   <g clip-path="url(#pc523933bc7)">
+   <g clip-path="url(#pe730608335)">
     <image xlink:href="data:image/png;base64,
-iVBORw0KGgoAAAANSUhEUgAAAE4AAAAECAYAAAAgaQkXAAAAeUlEQVR4nO3Q2wqCUBCF4S8haHsI6Zl7XsHTlogOFwqaFITXLhjm/2fu1oHriwJnXKa99iMn5Isp/+CVJ2UvzaOQDQqtVJSKgtmDOPHw1Qut8MFx/N2irH7SG6c289p/cYeGe0/TUT1o0I5nldkTezZlL25j9uI25g28TTmLU88AHQAAAABJRU5ErkJggg==" id="image1506f42ffc" transform="scale(1 -1) translate(0 -2.88)" x="9" y="-0.324" width="56.16" height="2.88"/>
+iVBORw0KGgoAAAANSUhEUgAAAE4AAAAECAYAAAAgaQkXAAAAeUlEQVR4nO3Q2wqCUBCF4S8haHsI6Zl7XsHTlogOFwqaFITXLhjm/2fu1oHriwJnXKa99iMn5Isp/+CVJ2UvzaOQDQqtVJSKgtmDOPHw1Qut8MFx/N2irH7SG6c289p/cYeGe0/TUT1o0I5nldkTezZlL25j9uI25g28TTmLU88AHQAAAABJRU5ErkJggg==" id="image4ab12f6e89" transform="scale(1 -1) translate(0 -2.88)" x="9" y="-0.324" width="56.16" height="2.88"/>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="pc523933bc7">
+  <clipPath id="pe730608335">
    <rect x="9" y="0.432" width="55.8" height="2.772"/>
   </clipPath>
  </defs>
