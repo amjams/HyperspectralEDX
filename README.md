@@ -11,7 +11,7 @@ Links to viewable EM maps
 
 [HAADF and multi-channel abundance maps (Figure 3)](http://www.nanotomy.org/avivator/?image_url=http://www.nanotomy.org/PW/temp03/Duinkerken2024SUB/figures/fig3/Figure3_Multichannel.ome.tif)
 
-[Abundance map composite image - Figure 3](http://www.nanotomy.org/avivator/?image_url=http://www.nanotomy.org/PW/temp03/Duinkerken2024SUB/figures/fig2/Multicolor.ome.tiff)
+[Abundance map composite image (Figure 3)](http://www.nanotomy.org/avivator/?image_url=http://www.nanotomy.org/PW/temp03/Duinkerken2024SUB/figures/fig2/Multicolor.ome.tiff)
 
 
 
