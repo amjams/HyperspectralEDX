@@ -1,7 +1,7 @@
 # Automated analysis of ultrastructure through large-scale hyperspectral electron microscopy
 This is the code and data repository of the paper “Automated analysis of ultrastructure through large-scale hyperspectral electron microscopy”, submitted for review. Here, you can find links to view the full EM maps accompanying the paper, code to reproduce the experiments, and downloadable EDX-EM data for reuse.
 
-![](https://github.com/amjams/HyperspectralEDX/data/HAADFtoColorDissolve.gif)
+![](https://github.com/amjams/HyperspectralEDX/blob/main/data/HAADFtoColorDissolve.gif)
 
 
 Index to the downloadable data
