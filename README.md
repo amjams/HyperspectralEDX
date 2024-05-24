@@ -9,7 +9,7 @@ Links to viewable EM maps
 ---------
 [Large-scale ColorEM - Figure 1](http://www.nanotomy.org/avivator/?image_url=http://www.nanotomy.org/PW/temp03/Duinkerken2024SUB/figures/fig1/Figure1_Multichannel.ome.tif)
 
-[HAADF and multi-channel abundance maps - Figure 3]([http://www.nanotomy.org/avivator/?image_url=http://www.nanotomy.org/PW/temp03/Duinkerken2023SUB/figures/fig2/HAADF.ome.tiff](http://www.nanotomy.org/avivator/?image_url=http://www.nanotomy.org/PW/temp03/Duinkerken2024SUB/figures/fig3/Figure3_Multichannel.ome.tif))
+[HAADF and multi-channel abundance maps - Figure 3]([http://www.nanotomy.org/avivator/?image_url=http://www.nanotomy.org/PW/temp03/Duinkerken2023SUB/figures/fig2/HAADF.ome.tiff](http://www.nanotomy.org/avivator/?image_url=http://www.nanotomy.org/PW/temp03/Duinkerken2024SUB/figures/fig3/Figure3_Multichannel.ome.tif)
 
 [Abundance map composite image - Figure 3](http://www.nanotomy.org/avivator/?image_url=http://www.nanotomy.org/PW/temp03/Duinkerken2024SUB/figures/fig2/Multicolor.ome.tiff)
 
