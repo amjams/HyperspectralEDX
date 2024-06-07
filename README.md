@@ -21,7 +21,7 @@ Links to viewable EM maps
 
 Acknowledgements
 ---------
-The endmember extraction algorithm used in this study was inspired by the work of [Vermeulen et al. (2021)](https://www.sciencedirect.com/science/article/abs/pii/S1386142521001232), and using code from the corresponding [repository](https://github.com/NU-ACCESS/UMAP). Implementation of SAM segmentation (Figure 4) uses code adapted from the following repositories: [SAM](https://github.com/facebookresearch/segment-anything), [SAMHQ](https://github.com/SysCV/sam-hq).   
+The endmember extraction algorithm used in this study was inspired by the work of [Vermeulen et al. (2021)](https://www.sciencedirect.com/science/article/abs/pii/S1386142521001232), and using code from the corresponding [repository](https://github.com/NU-ACCESS/UMAP). Implementation of SAM segmentation (Figure 4) uses code adapted from the following repositories: [SAM](https://github.com/facebookresearch/segment-anything), [SAMHQ](https://github.com/SysCV/sam-hq). VCA from this [repositoriy](https://github.com/Laadr/VCA) (used in preliminary testing; unused in paper).
 
 Licensing
 ---------
