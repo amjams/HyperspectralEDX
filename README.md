@@ -7,15 +7,19 @@ This is the code and data repository of the paper “Automated analysis of ultra
 
 Index to the downloadable data
 ---------
-[nanotomy.org](http://www.nanotomy.org/PW/temp03/Duinkerken2024SUB/index.html)
+[nanotomy.org](http://www.nanotomy.org/OA/Duinkerken2024NPJI/)
 
 Links to viewable EM maps
 ---------
-[Large-scale ColorEM (Figure 1)](http://www.nanotomy.org/avivator/?image_url=http://www.nanotomy.org/PW/temp03/Duinkerken2024SUB/figures/fig1/Figure1_Multichannel.ome.tif)
+[Large-scale ColorEM (Figure 1)](http://www.nanotomy.org/avivator/?image_url=http://www.nanotomy.org/OA/Duinkerken2024NPJI/figures/fig1/Figure1_Multichannel.ome.tif)
 
-[HAADF and multi-channel abundance maps (Figure 3)](http://www.nanotomy.org/avivator/?image_url=http://www.nanotomy.org/PW/temp03/Duinkerken2024SUB/figures/fig3/Figure3_Multichannel.ome.tif)
+[HAADF and multi-channel abundance maps (Figure 3)](http://www.nanotomy.org/avivator/?image_url=http://www.nanotomy.org/OA/Duinkerken2024NPJI/figures/fig3/Figure3_Multichannel.ome.tif)
 
-[Abundance map composite image (Figure 3)](http://www.nanotomy.org/avivator/?image_url=http://www.nanotomy.org/PW/temp03/Duinkerken2024SUB/figures/fig2/Multicolor.ome.tiff)
+[Abundance map composite image (Figure 3)](http://www.nanotomy.org/avivator/?image_url=http://www.nanotomy.org/OA/Duinkerken2024NPJI/figures/fig3/Figure3_Multicolor.ome.tif)
+
+[Skin HAADF and elemental maps (Figure S1)](http://www.nanotomy.org/avivator/?image_url=http://www.nanotomy.org/OA/Duinkerken2024NPJI/figures/figS1/FigureS1_Elements.ome.tif)
+
+[Skin abundance maps (Figure S1)](http://www.nanotomy.org/avivator/?image_url=http://www.nanotomy.org/OA/Duinkerken2024NPJI/figures/figS1/FigureS1_AbundanceMaps.ome.tif)
 
 
 
@@ -26,4 +30,4 @@ The endmember extraction algorithm used in this study was inspired by the work o
 Licensing
 ---------
 
-Copyright (C) 2024 Ahmad Alsahaf and Peter Duinkerken
+Copyright (C) 2024 Ahmad Alsahaf and Peter Duinkerken.
