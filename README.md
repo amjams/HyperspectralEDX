@@ -11,6 +11,8 @@ Index to the downloadable data
 ---------
 [nanotomy.org](http://www.nanotomy.org/OA/Duinkerken2024NPJI/)
 
+Update: the viewable maps can also be found on the [Image Data Repository](https://idr.openmicroscopy.org/webclient/?show=project-3102).
+
 Links to viewable EM maps
 ---------
 [Large-scale ColorEM (Figure 1)](http://www.nanotomy.org/avivator/?image_url=http://www.nanotomy.org/OA/Duinkerken2024NPJI/figures/fig1/Figure1_Multichannel.ome.tif)
