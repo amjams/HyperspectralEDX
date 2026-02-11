@@ -1,5 +1,5 @@
 # Automated analysis of ultrastructure through large-scale hyperspectral electron microscopy
-This is the code and data repository of the paper “Automated analysis of ultrastructure through large-scale hyperspectral electron microscopy”, submitted for review. Here, you can find links to view the full EM maps accompanying the paper, code to reproduce the experiments, and downloadable EDX-EM data for reuse.
+This is the code and data repository of the paper “Automated analysis of ultrastructure through large-scale hyperspectral electron microscopy”, in npj Imaging. Here, you can find links to view the full EM maps accompanying the paper, code to reproduce the experiments, and downloadable EDX-EM data for reuse.
 
 [Published paper](https://www.nature.com/articles/s44303-024-00059-7)
 
